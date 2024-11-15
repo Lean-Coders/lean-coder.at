@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Fix a Bug, make a Bug | LEAN-CODERS</title>
+    <style>
+      .cover {
+        position: fixed; /* Bild bleibt fixiert, auch wenn man scrollt */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("./splashimage.png"); /* Pfad zu deinem Bild */
+        background-size: cover; /* Skaliert das Bild, um den gesamten Bereich zu füllen */
+        background-position: center; /* Zentriert das Bild */
+        background-repeat: no-repeat; /* Verhindert Wiederholung des Bildes */
+
+        @media screen and (orientation: portrait) {
+          background-image: url("./splashimage-portrait.webp"); /* Pfad zu deinem Bild */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cover"></div>
+  </body>
+</html>
